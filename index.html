@@ -2,35 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Jennifer Vereecken Portfolio</title>
 </head>
 
+<div style="background-image: url(./assets/images/codingbk.jpg);">
 <body>
     <!--Header, my name-->
-    <header>
-        <h1>Jennifer Vereecken</h1>
-        <img alt="Current Photo" src="./assets/images/angor watt.jfif" class="currentPhoto">
-        
-        <!--links to sections-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#aboutme">About Me</a>
+    <div class="container">
+
+    <div class="jumbotron">
+
+        <h1 class="display-1"><strong> Jennifer Vereecken </strong></h1>
+        <p class="display-5"><em>An up and coming full-stack web-developer</em></p>
+        <!-- <img src="./assets/images/akw2.png"> -->
+    </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutme">About Me</a>
                 </li>
-                <li>
-                    <a href="#mywork">My Work</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mywork">My Work</a>
                 </li>
-                <li>
-                    <a href="#contactinfo">Contact Info</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact Info
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#email">Email</a>
+                    <a class="dropdown-item" href="#linkedIn">LinkedIn</a>
+                    <a class="dropdown-item" href="#github">GitHub</a>
+                  </div>
                 </li>
-            </ul>
+              </ul>
+            </div>
         </nav>
 
-    </header>
 
 <!--main body-->
-<main>
+<main id="mywork">
+    <div class="card text-center">
+        <div class="card-header">
+          Featured Project
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Password Generator</h5>
+          <iframe src="https://drive.google.com/file/d/15-oCYuZx6Oknzdx__yjGCIIHCev7A_u3/preview" width="440" height="280"></iframe>
+          <br>
+          <a href="https://jbeans12.github.io/passwordGenerator/Develop/" class="btn btn-primary">Go to Password Generator</a>
+        </div>
+    </div>
+    <h1 class="display-5"> Other Works </h1>
+    <div class="row">
+        <div class ="col-row-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/Screenshot (2).png" alt="WeatherAppSS">
+                <div class="card-body">
+                  <p class="card-text">This is a simple weather app. 
+                      When you search a city or town and press "Enter" the app will automatically show 
+                      current date and time, current temperature, curret weather, current humidity, current windspeed, 
+                      and the days Low and High temperatures. 
+                      <a href="https://jbeans12.github.io/weatherApp/" class="btn btn-primary">Go to Weather App</a>
+                  </p>
+                </div>
+            </div>
+        </div>
+        <div class ="col-row-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/loulou1.jpg" alt="LouLou BabyFace">
+                <div class="card-body">
+                  <p class="card-text">This is Princess LouLou-BabyFace's fan page. Revel in her cuteness!
+                      <br>
+                      <br>
+                      <br>
+                  </p>
+                  <a href="https://jbeans12.github.io/loulou/" class="btn btn-primary">Go to Lous FanPage</a>
+                </div>
+            </div>
+        </div>
+        <div class ="col-row-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/neji 1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is Neji the cat. He LOVES chicken.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
 
     <!--about me section-->
     <section id="aboutme">
@@ -42,7 +110,7 @@
     </section>
     <!--my work-->
     
-    <section id="mywork">
+    <!-- <section id="mywork">
             <div class="content">
                 <h2>My Work</h2>
                 <a href="https://jbeans12.github.io/loulou/">
@@ -84,24 +152,26 @@
                 </div>
             </div>
         </div>    
-    </section>
+    </section> -->
 
     <!--my contact information-->
     <section id="contactinfo">
         <h2>Contact Info</h2>
-        <address>Email:<a href="jennvereecken1@yahoo.com"> jennvereecken1@yahoo.com</a>
+        <address id="email">Email:<a href="jennvereecken1@yahoo.com"> jennvereecken1@yahoo.com</a>
             <br><br>
-                 Phone:(585)***-****
+                 GitHub:<a id="github" href="https://github.com/jbeans12"> jbeans12 </a>
             <br><br>
-                LinkedIn:<a href="LINKINPLACEHOLDER">Jennifer Vereecken</a>
+                LinkedIn:<a id="linkedIn" href="LINKINPLACEHOLDER"> Jennifer Vereecken</a>
         </address>
-    </section>
-
-
-    
+    </section> 
 </main>
 
+</div>
+</div>
 
-    
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
 </body>
 </html>
