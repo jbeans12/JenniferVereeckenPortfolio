@@ -9,7 +9,6 @@ body {
 img {
   height: 25%;
   width: 25%;
-  justify-content: center;
 }
 
 nav {
@@ -69,6 +68,10 @@ main {
 
 #mywork {
     background-color: rgb(212, 209, 212);
+}
+
+#aboutme {
+  background-color: rgb(212, 209, 212);
 }
 
 .row:after {
